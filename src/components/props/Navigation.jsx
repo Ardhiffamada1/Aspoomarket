@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import { Menu, Input, Space } from 'antd';
-import logo from "./Image/Logo.png";
-import { HomeOutlined, ShoppingCartOutlined, UserOutlined, SearchOutlined } from '@ant-design/icons';
+import logo from "../Image/Logo.png"
+import { SearchOutlined } from '@ant-design/icons';
 
 const { Search } = Input;
 
-const Home = () => {
+const Navbar = () => {
     const menuStyle = {
         backgroundColor: '#FBD9C0',
         color: '#000000',
@@ -23,7 +24,7 @@ const Home = () => {
       <Space><img src={logo} width={80} ></img>
       </Space>  
       <Menu.Item key="home">
-        Beranda
+      <Link to="/">Home</Link>
       </Menu.Item>
       <Menu.Item key="shop" >
         Produk
@@ -41,5 +42,5 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Navbar;
 
