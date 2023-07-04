@@ -2,7 +2,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css"
 import Layout from "./components/pages/layout";
-import Login from './components/pages/login'
+import Login from './components/pages/login';
+import Registrasi from "./components/pages/registrasi"
 import Home from "./components/pages/Home/Home";
 
 export default function App() {
@@ -11,6 +12,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route path="login" element={<Login />} />
+        <Route path="registrasi" element={<Registrasi />} />
         <Route path="home" element={<Home />} />
         </Route>
       </Routes>
