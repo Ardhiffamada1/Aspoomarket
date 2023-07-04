@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Form, Input, message, Card, Typography, Row, Col } from 'antd';
-import Image from "../Image/Login.png";
+import Image from "../Image/Registrasi.png";
 import { Link } from 'react-router-dom';
 
 
@@ -13,19 +13,16 @@ const Login = () => {
     message.success('Submit success!');
   };
 
-  const onFinishFailed = () => {
-    message.error('Submit failed!');
-  };
 
   return (
     <div className="login" style={{ backgroundColor: '#FBD9C0', height: '100vh', backgroundPosition: 'top' }}>
       <div className="body" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-      <Card style={{ width: '130%', maxWidth: 950, height: '420px' }}>
+      <Card style={{ width: '130%', maxWidth: 950, height: '660px' }}>
 
       <Row gutter={16}>
           <Col span={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ textAlign: 'center' }}>
-                <img src={Image} alt="market" style={{ width: '125%', marginTop: '5px' }} />
+                <img src={Image} alt="Registrasi" style={{ width: '125%', marginTop: '5px' }} />
               </div>
             </Col>
 
@@ -33,13 +30,12 @@ const Login = () => {
               <div style={{ paddingRight: '24px' }}>
                 <br></br>
                 <Title level={2}
-                 style={{ textAlign: 'center' }}>Login</Title>
+                 style={{ textAlign: 'center' }}>Registrasi</Title>
                 <br />
                 <Form
                   form={form}
                   layout="vertical"
                   onFinish={onFinish}
-                  onFinishFailed={onFinishFailed}
                   autoComplete="off"
                   style={{ width: '120%' }}
                 >
@@ -70,6 +66,48 @@ const Login = () => {
                     style={{ maxWidth: 250, margin: '0 auto 15px' }}
                   >
                     <Input placeholder="Tanggal Lahir" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="alamat"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Alamat" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="mitra"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Mitra" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="provinsi"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Provinsi" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="kota"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Kota" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="kabupaten"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Kabupaten" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="kecamatan"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Kecamatan" style={{ width: '100%' }} />
                   </Form.Item>
                   
                   <Form.Item

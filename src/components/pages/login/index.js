@@ -25,7 +25,7 @@ const Login = () => {
       <Row gutter={16}>
           <Col span={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ textAlign: 'center' }}>
-                <img src={Image} alt="market" style={{ width: '125%', marginTop: '5px' }} />
+                <img src={Image} alt="login" style={{ width: '125%', marginTop: '5px' }} />
               </div>
             </Col>
 
