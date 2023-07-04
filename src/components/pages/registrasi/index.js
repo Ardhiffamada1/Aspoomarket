@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Form, Input, message, Card, Typography, Row, Col } from 'antd';
-import Image from "../Image/Login.png";
+import Image from "../Image/Registrasi.png";
 
 
 const { Title } = Typography;
@@ -19,12 +19,12 @@ const Login = () => {
   return (
     <div className="login" style={{ backgroundColor: '#FBD9C0', height: '100vh', backgroundPosition: 'top' }}>
       <div className="body" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%' }}>
-      <Card style={{ width: '130%', maxWidth: 970, height: '635px' }}>
+      <Card style={{ width: '135%', maxWidth: 980, height: '640px' }}>
 
       <Row gutter={16}>
           <Col span={12} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
               <div style={{ textAlign: 'center' }}>
-                <img src={Image} alt="login" style={{ width: '125%', marginTop: '5px' }} />
+                <img src={Image} alt="registrasi" style={{ width: '125%', marginTop: '5px' }} />
               </div>
             </Col>
 

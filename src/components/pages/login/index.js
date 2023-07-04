@@ -55,7 +55,7 @@ const Login = () => {
                     style={{ maxWidth: 250, margin: '0 auto 15px' }}
                   >
                     <Input placeholder="Password" style={{ width: '100%' }} />
-                    <a href="registrasi.js" style={{ fontSize: '13px' }}>don't have an account?</a>
+                    <a href="Registrasi" style={{ fontSize: '13px' }}>don't have an account?</a>
                   </Form.Item>
                   
                   <Form.Item
