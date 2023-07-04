@@ -1,7 +1,6 @@
 import React from "react";
 import { Button, Form, Input, message, Card, Typography, Row, Col } from 'antd';
 import Image from "../Image/Login.png";
-import { Link } from 'react-router-dom';
 
 
 const { Title } = Typography;
@@ -56,7 +55,7 @@ const Login = () => {
                     style={{ maxWidth: 250, margin: '0 auto 15px' }}
                   >
                     <Input placeholder="Password" style={{ width: '100%' }} />
-                    <Link to="/registrasi" style={{ fontSize: '13px' }}>don't have an account?</Link>
+                    <a href="registrasi.js" style={{ fontSize: '13px' }}>don't have an account?</a>
                   </Form.Item>
                   
                   <Form.Item

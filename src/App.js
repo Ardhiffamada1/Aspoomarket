@@ -1,4 +1,4 @@
-import Login from './components/login';
+import Login from './components/pages/login/index';
 import './App.css';
 import Registrasi from './components/pages/registrasi';
 
