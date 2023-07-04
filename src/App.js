@@ -1,12 +1,13 @@
 import Login from './components/login';
 import './App.css';
-import Register from './components/Homepage/Home';
-import Layout from './components/pages/layout';
+import Registrasi from './components/pages/registrasi';
+
 
 function App() {
   return (
     <div className="App">
       <Login/>
+      <Registrasi/>
     </div>
   );
 }

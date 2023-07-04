@@ -56,7 +56,20 @@ const Login = () => {
                     style={{ maxWidth: 250, margin: '0 auto 15px' }}
                   >
                     <Input placeholder="Password" style={{ width: '100%' }} />
-                    <Link to="/registrasi" style={{ fontSize: '13px' }}>don't have an account?</Link>
+                  </Form.Item>
+                  <Form.Item
+                    name="nama"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Nama" style={{ width: '100%' }} />
+                  </Form.Item>
+                  <Form.Item
+                    name="tanggal lahir"
+                    rules={[{ required: true }]}
+                    style={{ maxWidth: 250, margin: '0 auto 15px' }}
+                  >
+                    <Input placeholder="Tanggal Lahir" style={{ width: '100%' }} />
                   </Form.Item>
                   
                   <Form.Item
