@@ -11,7 +11,7 @@ const { Search } = Input;
 
 const { Header, Content, Footer } = Layout;
 
-const Home = () => {
+const Navbar = () => {
   const menuStyle = {
     backgroundColor: '#FBD9C0',
     color: '#000000',
@@ -43,35 +43,9 @@ const Home = () => {
           <Menu.Item key="9" style={{color:'#757272'}}>|</Menu.Item>
           <Menu.Item key="10" style={{color:'#757272'}}>Daftar</Menu.Item>
         </Menu>
-      <Content>
-        <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
-        <Carousel>
-          <div>
-            <img src={iklan1} alt="Iklan 1" style={{ width: '800px', justifyContent:'center', marginLeft:'350px', marginTop:'50px', paddingBottom:'50px'}}/>
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="path-to-image-2" alt="Iklan 2" />
-          </div>
-          <div style={{ display: 'flex', justifyContent: 'center' }}>
-            <img src="path-to-image-3" alt="Iklan 3" />
-          </div>
-        </Carousel>
-          <Card title="Produk Terpopuler" style={{ width: '100%' }}>
-            <Card.Grid style={{ width: '33%', textAlign: 'center' }}>
-              <h2>Produk 1</h2>
-            </Card.Grid>
-            <Card.Grid style={{ width: '33%', textAlign: 'center' }}>
-              <h2>Produk 2</h2>
-            </Card.Grid>
-            <Card.Grid style={{ width: '33%', textAlign: 'center' }}>
-              <h2>Produk 3</h2>
-            </Card.Grid>
-          </Card>
-        </div>
-      </Content>
-      <Footer style={{ textAlign: 'center' }}>Marketplace ©2023 Created by You</Footer>
+
     </Layout>
   );
 };
 
-export default Home;
+export default Navbar;
