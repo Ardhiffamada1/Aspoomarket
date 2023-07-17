@@ -1,10 +1,13 @@
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css"
+import 'bootstrap/dist/css/bootstrap.css';
 import Layout from "./components/pages/layout";
 import Login from './components/pages/login';
 import Registrasi from "./components/pages/registrasi"
 import Home from "./components/pages/Home/Home";
+import Footer from "./components/main asset/Footer";
+
 
 export default function App() {
   return (
@@ -14,6 +17,7 @@ export default function App() {
         <Route path="login" element={<Login />} />
         <Route path="registrasi" element={<Registrasi />} />
         <Route path="home" element={<Home />} />
+        <Route path="footer" element={<Footer/>} />
         </Route>
       </Routes>
     </BrowserRouter>
