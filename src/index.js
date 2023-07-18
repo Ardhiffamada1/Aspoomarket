@@ -4,7 +4,8 @@ import "./App.css"
 import Layout from "./components/pages/layout";
 import Login from './components/pages/login';
 import Registrasi from "./components/pages/registrasi"
-import Navbar from "./components/pages/Navbar/navbar";
+import Navbar from "./components/pages/navbar/navbar";
+import DetailProduct from "./components/pages/detailproduct/detail";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="login" element={<Login />} />
         <Route path="registrasi" element={<Registrasi />} />
         <Route path="navbar" element={<Navbar/>} />
+        <Route path="detailproduct" element={<DetailProduct/>} />
         </Route>
       </Routes>
     </BrowserRouter>

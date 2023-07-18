@@ -1,7 +1,8 @@
 import Login from './components/pages/login/index';
 import './App.css';
 import Registrasi from './components/pages/registrasi';
-import Registrasi from './components/pages/navbar';
+import Navbar from './components/pages/navbar';
+import DetailProduct from './components/pages/detail';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Login/>
       <Registrasi/>
       <Navbar/>
+      <DetailProduct/>
     </div>
   );
 }

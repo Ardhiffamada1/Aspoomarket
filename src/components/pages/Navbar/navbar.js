@@ -1,15 +1,13 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import { Layout, Menu, Carousel, Card,Space, Input, Alert} from 'antd';
+import { Layout, Menu,Space, Input} from 'antd';
 import logo from "../Image/Logo.png"
 import '@fontsource/poppins';
 import { SearchOutlined } from '@ant-design/icons';
 import keranjang from "../Image/keranjang.png";
-import iklan1 from "../Image/iklan1.png";
+
 
 const { Search } = Input;
 
-const { Header, Content, Footer } = Layout;
 
 const Navbar = () => {
   const menuStyle = {
