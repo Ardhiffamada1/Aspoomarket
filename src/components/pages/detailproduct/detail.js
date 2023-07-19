@@ -4,6 +4,7 @@ import { ShoppingCartOutlined } from '@ant-design/icons';
 import sempelImage from "../Image/sempel.png";
 import '@fontsource/poppins';
 import Navbar from '../navbar/navbar';
+import Footer from '../../main asset/Footer';
 
 const Detail = () => {
   const [quantity, setQuantity] = useState(1);
@@ -25,12 +26,12 @@ const Detail = () => {
   return (
     <>
       <Navbar />
-      <Row style={{ marginTop: '30px', marginLeft: '62px', alignItems: 'center' }}>
+      <Row style={{ marginTop: '10px', marginLeft: '80px', alignItems: 'center' }}>
         <Col flex="none">
           <Image width={370} src={sempelImage} /> 
         </Col>
-        <Col flex="auto" style={{ marginLeft: '10px', paddingLeft: '20px', marginRight: '20px' }}>
-          <h2 style={{ fontWeight: 'bold', marginTop: '30px', marginBottom: 0 }}>Bandeng Presto Juwana</h2>
+        <Col flex="auto" style={{ marginLeft: '10px', paddingLeft: '40px', marginRight: '20px' }}>
+          <h2 style={{ fontWeight: 'bold', marginTop: '70px', marginBottom: 0 }}>Bandeng Presto Juwana</h2>
           <p style={{ marginTop: '10px' }}>Rp 100.000,-</p>
           <br />
           <h4 style={{ margin: 0 }}>Detail</h4>
@@ -68,7 +69,7 @@ const Detail = () => {
       </Row>
       <Row justify="start" style={{ marginTop: '18px' }}>
         <Col span={4} offset={1}>
-          <Card style={{ width: 300, fontWeight: 'bold', marginLeft: '-10px' }}>
+          <Card style={{ width: 300, fontWeight: 'bold', marginLeft: '10px' }}>
             <Row align="middle">
               <Col flex="none">
                 <Avatar size={30} src="/path/to/profile.jpg" />
@@ -81,6 +82,8 @@ const Detail = () => {
           </Card>
         </Col>
       </Row>
+      <br/>
+      <Footer />
     </>
   );
 };
