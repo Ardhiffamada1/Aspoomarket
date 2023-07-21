@@ -3,7 +3,7 @@ import { Image, Row, Col, Button, Card, Rate, Avatar } from 'antd';
 import { ShoppingCartOutlined } from '@ant-design/icons';
 import sempelImage from "../Image/sempel.png";
 import '@fontsource/poppins';
-import Navbar from '../navbar/navbar';
+import Navbar from '../Navbar/navbar';
 import Footer from '../../main asset/Footer';
 
 const Detail = () => {

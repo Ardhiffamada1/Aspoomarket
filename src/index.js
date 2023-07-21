@@ -7,9 +7,15 @@ import Registrasi from "./components/pages/registrasi"
 import Home from "./components/pages/Home/Home";
 import Footer from "./components/main asset/Footer";
 
-import Navbar from "./components/pages/navbar/navbar";
+import Navbar from "./components/pages/Navbar/navbar";
 import Keranjang from "../src/components/pages/cart"
 import DetailProduct from "./components/pages/detailproduct/detail";
+import TokoDetail from "./components/pages/Detailtoko/detailtoko";
+import Profile from "./components/pages/Profilepengguna/profilepengguna";
+import Checkout from "./components/pages/Checkout/checkout";
+import RatingUlasan from "./components/pages/Rating/rating";
+import StatusPengiriman from "./components/pages/Statuspengiriman/statuspengiriman";
+import Backbutton from "./components/pages/Backbutton/backbutton";
 
 export default function App() {
   return (
@@ -20,10 +26,15 @@ export default function App() {
         <Route path="registrasi" element={<Registrasi />} />
         <Route path="home" element={<Home />} />
         <Route path="footer" element={<Footer/>} />
-=======
         <Route path="navbar" element={<Navbar/>} />
         <Route path="detailproduct" element={<DetailProduct/>} />
         <Route path="keranjang" element={<Keranjang/>} />
+        <Route path="tokodetail" element={<TokoDetail/>}/>
+        <Route path="profilepengguna" element={<Profile/>}/>
+        <Route path="checkout" element={<Checkout/>}/>
+        <Route path="ratingulasan" element={<RatingUlasan/>}/>
+        <Route path="statuspengiriman" element={<StatusPengiriman/>}/>
+        <Route path="backbutton" element={<Backbutton/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
